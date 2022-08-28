@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "BackTo1815",
+  "version": "1.0.0",
+  "description": "Simple plugin that uses JavaScript to replace 'Belgium' with 'South-Netherlands'.",
+  "icons": {
+    "256": "logo.png"
+  },
+  "content_scripts":
+  [
+    {
+      "matches": ["*://*/*"],
+      "js": ["script.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
